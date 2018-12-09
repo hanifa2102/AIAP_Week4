@@ -10,3 +10,15 @@ pip install -r requirements.txt  # Install dependencies
 # Work on the assignment
 deactivate # Exit the virtual environment
 Please clone or download as .zip file of this repository.
+
+
+mkdir img
+cd img
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+tar -xvzf cifar-10-python.tar.gz
+
+
+keras.callbacks.EarlyStopping(monitor='val_loss',
+                              min_delta=0,
+                              patience=2,
+                              verbose=0, mode='auto')
